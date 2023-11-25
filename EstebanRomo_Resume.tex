@@ -68,6 +68,13 @@
   }
 }
 
+\newcommand{\resumeSubItem}[1]{
+  \subitem-\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
 \newcommand{\resumeItemHeading}[2]{
   \item\small{
     {\textbf{#1}: #2 \vspace{-2pt}}
@@ -95,8 +102,6 @@
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
@@ -138,6 +143,8 @@
         % Vaccine interchangeability work
         % Mi incidents
         % Performance work
+        \resumeItemHeading {Shield}{employers collect, manage and verify proof of vaccination}
+        \resumeSubItem{This is a test}
         \resumeItemHeading {ClinicFlow}{End-to-end software solution for institutions to run paperless mass immunization campaigns. Licensed by the Nova Scotia Health Authority to run their COVID-19 campaign among other institutions. ClinicFlow handles millions of patients' data. Built with: Typescript, React, PostgreSQL, AWS Elastic Beanstalk, AWS RDS, Redis, Jenkins, Lerna, and Typeorm.}
         % Worked on the web UI
         % Vaccine interchangeability work
