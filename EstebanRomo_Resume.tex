@@ -62,16 +62,14 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
+% \newcommand{\resumeItem}[1]{
+%   \item\small{
+%     {#1 \vspace{-2pt}}
+%   }
+% }
 
-\newcommand{\resumeSubItem}[1]{
-  \subitem-\small{
-    {#1 \vspace{-2pt}}
-  }
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
 }
 
 
@@ -108,7 +106,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -136,24 +134,46 @@
 
     \resumeSubheading
       {Full Stack Software Engineer}{April 2021 -- Nov 2023}
-      {CANImmunize Inc.}{Remote}
+      {CANImmunize}{Remote}
       \resumeItemListStart
-        \resumeItemHeading {VaxRecordNS}{Allows the residents of Nova Scotia to access their and their dependent's official vaccination records. Developed as part of a multi-vendor collaborative effort to centralize the provinces' health data. Built with: Typescript, React, React Native, AWS Lambda, and Jenkins}
-        % Worked on the web UI
-        % Vaccine interchangeability work
-        % Mi incidents
-        % Performance work
-        \resumeItemHeading {Shield}{employers collect, manage and verify proof of vaccination}
-        \resumeSubItem{This is a test}
-        \resumeItemHeading {ClinicFlow}{End-to-end software solution for institutions to run paperless mass immunization campaigns. Licensed by the Nova Scotia Health Authority to run their COVID-19 campaign among other institutions. ClinicFlow handles millions of patients' data. Built with: Typescript, React, PostgreSQL, AWS Elastic Beanstalk, AWS RDS, Redis, Jenkins, Lerna, and Typeorm.}
-        % Worked on the web UI
-        % Vaccine interchangeability work
-        % Mi incidents
-        % Performance work
-        \resumeItemHeading {Canadian Vaccine Catalogue}{Comprehensive, standards-based, source-of-truth for vaccine terminology and vaccine product information in Canada. Built with: Typescript, AWS EC2, Jenkins, and Lerna}
-        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
-        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL, and Docker to analyze GitHub data}
-        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+        \resumeItemHeading{VaxRecordNS}{Allows the residents of Nova Scotia to access their's and their dependent's vaccination records.}
+        \resumeItemListStart
+          % \resumeItem{Developed as part of a multi-vendor collaborative effort to centralize the provinces' health data}
+          \resumeItem{Collaborated closely with multiple vendors as part of a wider effort to centralize the province's health data.}
+          % \resumeItem{Developed web and mobile applications using React and React Native that consume a FHIR CDR with millions of patient's records.}
+          \resumeItem{Headed the developement of a React web app that consumes a FHIR CDR with millions of patient's records.}
+          \resumeItem{Developed a React Native mobile application equivalent to the web application.}
+          \resumeItem{Designed serverless services that allow users to manage their dependents and generate official downloadable vaccinations records using AWS Lambda, Twilio, and Redis.}
+          % \resumeItem{Created a serverless feature flag services that allows for immediate feature toggling.}
+          % \resumeItem{Authentication and authorization using OpenID Connect.}
+          \resumeItem{Set up CI/CD pipelines to build, and deploy the applications to AWS with CircleCI.}
+          \resumeItem{Managed the project's AWS infrastructure using Terraform.}
+          % \resumeItem{Built with: Typescript, React, React Native, Redis, AWS Lambda, and CircleCI}
+        \resumeItemListEnd
+        \resumeItemHeading{Shield}{Digital tool to help employers collect, manage and verify proof of vaccination of their employees.}
+        \resumeItemListStart
+          \resumeItem{This is a test}
+        \resumeItemListEnd
+        % \resumeItemHeading{ClinicFlow}{End-to-end software solution for institutions to run paperless mass immunization campaigns. Licensed by the Nova Scotia Health Authority to run their COVID-19 campaign among other institutions. }
+        \resumeItemHeading{ClinicFlow}{End-to-end software solution for institutions to run paperless mass immunization campaigns.}
+        \resumeItemListStart
+          \resumeItem{Developed performant web and mobile applications with React, React Native, PostgreSQL, AWS EBS, and AWS RDS that handle the forecasting, booking, logging, and proof of vaccination of millions of Canadians.}
+          % \resumeItem{Developed performant web and mobile applications that handle the forecasting, booking, and vaccination of millions of patients for clients like the Nova Scotia Health Authority to run their COVID-19 and flu campaigns.}
+          % \resumeItem{Developed a performant React web app licensed by the Nova Scotia Health Authority to run their COVID-19 campaign.}
+          \resumeItem{Rapidly expended the vaccination forecasting system to support new COVID-19 guideliness.}
+          % \resumeItem{Vaccine interchangeability work}
+          \resumeItem{Solved major incidents that jeopardized provincial COVID-19 vaccination campaigns as the on-call engineer.}
+          % \resumeItem{Built with: Typescript, React, PostgreSQL, AWS Elastic Beanstalk, AWS RDS, Redis, Jenkins, Lerna, and Typeorm}
+        \resumeItemListEnd
+        \resumeItemHeading{Canadian Vaccine Catalogue}{Comprehensive, standards-based, source-of-truth for vaccine terminology and vaccine product information in Canada.}
+        \resumeItemListStart
+          \resumeItem{Maintened a catalogue of thousands of vaccines, diseases and lot numbers made available as an npm package, website, and HL7 FHIR API running on AWS EC2.}
+          \resumeItem{Released new versions of the CVC with data provided by Health Canada on a biweekly basis using Jenkins.}
+          % \resumeItem{Built with: Typescript, AWS EC2, Jenkins, and Lerna}
+        \resumeItemListEnd
+        % \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+        % \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL, and Docker to analyze GitHub data}
+        % \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
       \resumeItemListEnd
 
 % ClinicFlow / ClinicMode: NS
@@ -171,17 +191,17 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
-    \resumeSubheading
-      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-      {Southwestern University}{Georgetown, TX}
-      \resumeItemListStart
-        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-        \resumeItem{Developed a game in Java to test the generated dungeons}
-        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
-      \resumeItemListEnd
+    % \resumeSubheading
+    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+    %     \resumeItem{Developed a game in Java to test the generated dungeons}
+    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+    %   \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -190,8 +210,8 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Sheridan College}{Oakville, ON}
-      {Ontario College Diploma, Computer Systems Technician – Software Engineering}{Aug. 2019 -- Dec 2020}
+      {Sheridan College}{Aug. 2019 -- Dec 2020}
+      {Ontario College Diploma, Computer Systems Technician - Software Engineering}{Oakville, ON}
       \resumeItemListStart
         \resumeItem{High Honours recipient }
         \resumeItem{GPA 3.93/4.00 }
@@ -203,29 +223,30 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{@es-romo/relay} $|$ \emph{ Typescript, WebSockets, Lerna, GitHub Actions }}{Nov 2023 -- Present}
+          {\textbf{@es-romo/relay} $|$ \emph{ Typescript, WebSockets, Lerna, Jest, GitHub Actions }}{Nov 2023 -- Present}
           \resumeItemListStart
             \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
             \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
             \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
             \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
           \resumeItemListEnd
-       \resumeProjectHeading
-          {\textbf{Brainf**k compiler} $|$ \emph{ Zig, WebAssembly, Javascript }}{Nov 2023 -- Present}
-          \resumeItemListStart
-            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
-            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
-            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
-            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
-          \resumeItemListEnd
-        \resumeProjectHeading
-          {\textbf{royalur.io} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
-          \resumeItemListStart
-            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
-            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
-            \resumeItem{Visualized GitHub data to show collaboration}
-            \resumeItem{Used Celery and Redis for asynchronous tasks}
-          \resumeItemListEnd
+      %  \resumeProjectHeading
+      %     {\textbf{Brainf**k compiler} $|$ \emph{ Zig, WebAssembly, Javascript }}{Nov 2023 -- Present}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+      %       \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+      %       \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+      %       \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+      %     \resumeItemListEnd
+      %   \resumeProjectHeading
+      %     {\textbf{royalur.io} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+      %       \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+      %       \resumeItem{Visualized GitHub data to show collaboration}
+      %       \resumeItem{Used Celery and Redis for asynchronous tasks}
+      %     \resumeItemListEnd
+
       % \resumeProjectHeading
       %     {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
       %     \resumeItemListStart
@@ -247,15 +268,15 @@
 
 
 %
-%-----------PROGRAMMING SKILLS-----------
+%-----------SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Typescript, SQL (Postgres), JavaScript, HTML/CSS} \\
      \textbf{Frameworks}{: React, React Native, Express, Node.js, Jest } \\
-     \textbf{Developer Tools}{: Git, CircleCi, Terraform, GitHub Actions, Jenkins, Docker, AWS, XCode, Lerna } \\
+     \textbf{Developer Tools}{: Git, CircleCI, Terraform, GitHub Actions, Jenkins, Docker, AWS, XCode, Lerna } \\
      \textbf{Libraries}{: Typeorm, Ant Design } \\
-     \textbf{Concepts}{: FHIR, OIDC } \\
+    %  \textbf{Concepts}{: FHIR, OIDC } \\
      \textbf{Others}{: Elastic Beanstalk, RDS, ElastiCache, Redis, Docker, EC2, Terraform }
     }}
  \end{itemize}
