@@ -81,6 +81,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSimpleSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -105,39 +112,37 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Esteban Romo} \\ \vspace{1pt}
     \href{https://github.com/es-romo}{\underline{github.com/es-romo}} $|$ 
-    \href{mailto:esteban.romo.esparza@gmail.com}{\underline{esteban.romo.esparza@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/esteban-romo/}{\underline{linkedin.com/in/esteban-romo}} $|$ 
+    \href{mailto:es-romo@proton.me}{\underline{es-romo@proton.me}} $|$ 
+    \href{https://www.linkedin.com/in/es-romo/}{\underline{linkedin.com/in/es-romo}} $|$ 
     \small +1-437-344-0898
 \end{center}
 
-
 %-----------WORK EXPERIENCE-----------
-\section{Work Experience}
+\section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Full Stack Software Engineer}{April 2021 -- Nov 2023}
+      {Full Stack Software Engineer}{Apr 2021 -- Nov 2023}
       {CANImmunize}{Remote}
       \resumeItemListStart
         \resumeItemHeading{VaxRecordNS}{Allows the residents of Nova Scotia to access their vaccination records.}
         \resumeItemListStart
-          \resumeItem{Collaborated closely with multiple vendors as part of a wider effort to centralize the province's health data.}
-          \resumeItem{Developed web and mobile apps using React, React Native, and Typescript that interface with a governmental OIDC identity provider and a FHIR data repository storing the vaccination records of 1M+ patients.}
-          \resumeItem{Designed scalable serverless services that allow users to manage their dependents and generate official downloadable vaccination records using AWS Lambda, Twilio, and Redis.}
-          \resumeItem{Created dashboards and alerts to monitor the health of the applications with AWS CloudWatch and Slack integrations.}
+          \resumeItem{Collaborated closely with multiple vendors as part of a wide effort to centralize the province's health data.}
+          \resumeItem{Developed web and mobile apps using React, React Native, and Typescript that interface with a governmental OIDC provider and a FHIR data repository that stores the vaccination records of 1M+ patients.}
+          \resumeItem{Designed scalable serverless services that allow users to manage their dependents and generate official their vaccination records using AWS Lambda, Twilio, and Redis.}
+          \resumeItem{Created dashboards and alerts to monitor the health of the service with CloudWatch and Slack integrations.}
           \resumeItem{Set up CI/CD pipelines to build and deploy the applications with CircleCI.}
           \resumeItem{Managed the project's infrastructure using Terraform.}
         \resumeItemListEnd
         \resumeItemHeading{Shield}{Digital tool to help employers collect, manage and verify proof of vaccination of their employees.}
         \resumeItemListStart
-          \resumeItem{Developed a SaaS solution with Typescript, React, and PostgreSQL that handled PHI of up to 150K+ employees across public and private sectors.}
-          \resumeItem{Participated in the interview, hiring, and onboarding of co-op students.}
+          \resumeItem{Developed a SaaS product with Typescript, React, and PostgreSQL that handled PHI of up to 150K+ employees of major governmental and private organizations.}
+          \resumeItem{Conducted interviews, assisted in hiring, and onboarded co-op students.}
           \resumeItem{Conducted code reviews of peers and mentored junior developers.}
           \resumeItem{Implemented suggestions from external cybersecurity audits to become SOC 2 compliant.}
         \resumeItemListEnd
@@ -145,30 +150,45 @@
         \resumeItemListStart
           \resumeItem{Developed performant web and mobile applications with React, React Native, and PostgreSQL that handle the forecasting, booking, logging, and proof of vaccination of 1M+ Canadians.}
           \resumeItem{Expanded the vaccination forecasting system to support new COVID-19 guidelines.}
-          \resumeItem{Headed deployments that major data migrations and infrastructure changes.}
+          \resumeItem{Headed deployments that involved major data migrations and infrastructure changes.}
           \resumeItem{Diagnosed, mitigated and solved critical incidents as the on-call engineer.}
         \resumeItemListEnd
-        \resumeItemHeading{Canadian Vaccine Catalogue (CVC)}{Comprehensive, standards-based, source-of-truth for vaccine terminology and vaccine product information in Canada.}
-        \resumeItemListStart
-          \resumeItem{Solely responsible for maintaining a catalogue with 100K+ records made available as an npm package, web app, and HL7 FHIR API running on AWS EC2.}
-          \resumeItem{Released new versions of the CVC with data provided by Health Canada biweekly using Jenkins.}
-        \resumeItemListEnd
+        % \resumeItemHeading{Canadian Vaccine Catalogue (CVC)}{Comprehensive, standards-based, source-of-truth for vaccine terminology and vaccine product information in Canada.}
+        % \resumeItemListStart
+        %   \resumeItem{Solely responsible for maintaining a catalogue with 100K+ records made available as an npm package, web app, and HL7 FHIR API running on AWS EC2.}
+        %   \resumeItem{Released new versions of the CVC with data provided by Health Canada biweekly using Jenkins.}
+        % \resumeItemListEnd
       \resumeItemListEnd
+    \resumeSubheading
+      {Freelance Lead Developer}{Feb 2020 -- May 2020}
+      {ppeburnrate.com}{Oakville, Ontario}
+      \resumeItemListStart
+        \resumeItem{Recruited and led a team of 5 developers in building a responsive web app that helps organizations manage their PPE consumption using React, Express, DigitalOcean and Microsoft SQL Server.}
+      \resumeItemListEnd
+    % \resumeSubheading
+    %   {Shipping \& Receiving Associate}{Apr 2019 -- Sep 2020}
+    %   {Areion International}{Oakville, Ontario}
+    % \resumeSubheading
+    %   {Inventory Administration Associate}{Jul 2018 -- Aug 2019}
+    %   {Fenyw}{Guadalajara, Mexico}
   \resumeSubHeadingListEnd
-
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Sheridan College}{Dec 2020}
-      {Ontario College Diploma, Computer Systems Technician - Software Engineering}{Oakville, ON}
+      {Sheridan College}{Sep 2019 -- Dec 2020}
+      {Ontario College Diploma in Software Engineering}{Oakville, Ontario}
       \resumeItemListStart
-        \resumeItem{High Honours recipient.}
-        \resumeItem{GPA 3.93/4.00.}
+        \resumeItem{Cumulative GPA: 3.93/4.00; High Honours.}
       \resumeItemListEnd
+    % \resumeSubheading
+    %   {The Web Developer Bootcamp}{Jun 2019 -- Aug 2019}
+    %   {Online Certificate}{udemy.com}
+    \resumeSubheading
+      {Centro de Enseñanza Técnica Industrial}{Aug 2015 -- Jun 2019}
+      {Technologist in Software Developement}{Guadalajara, Mexico}
   \resumeSubHeadingListEnd
-
 
 %-----------PROJECTS-----------
 \section{Projects}
@@ -176,21 +196,50 @@
       \resumeProjectHeading
           {\textbf{@es-romo/relay} $|$ \emph{Typescript, Fastify, Lerna, Jest, GitHub Actions, Glitch }}{Nov 2023 -- Present}
           \resumeItemListStart
-            \resumeItem{Developing a minimal implementation of a WebSocket-based relay server and client for listen server / host architectures made available as individual npm packages.}
+            \resumeItem{Creator of a WebSocket-based relay server and client for listen server and host architectures, made available as individual npm packages.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
+%-----------PROJECTS-----------
+% \section{Volunteering}
+% \resumeSubHeadingListStart
+% \resumeSubheading
+%   {Administration \& Events Staff}{2017}
+%   {CODE Jalisco}{Guadalajara, Mexico}
+% \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+% \section{Courses \& Events}
+% \resumeSubHeadingListStart
+%   \resumeSimpleSubheading
+%   {Hack the Northeast: Beyond 2020}{Jan 2021}
+%   \resumeSimpleSubheading
+%   {HackUMBC 2020}{Nov 2020}
+% \resumeSubHeadingListEnd
+
 %-----------SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Typescript, SQL (Postgres), JavaScript, HTML/CSS.} \\
-     \textbf{Frameworks}{: React, React Native, Express, Fastify, Node.js, Jest.} \\
-     \textbf{Developer Tools}{: Git, CircleCI, GitHub Actions, Jenkins, XCode, Lerna.} \\
-     \textbf{Infrastructure}{: AWS, Elastic Beanstalk, RDS, ElastiCache, EC2, Terraform.} \\
-     \textbf{Libraries and Others}{: Typeorm, Ant Design, Redis, Docker.} \\
-    }}
- \end{itemize}
+\begin{minipage}[t]{.7\textwidth}
+  \section{Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+      \small{\item{
+      \textbf{Languages}{: Typescript, SQL, Postgres, JavaScript, HTML, CSS.} \\
+      \textbf{Frameworks}{: React, React Native, Express, Fastify, Jest.} \\
+      \textbf{Tools}{: Git, CircleCI, GitHub Actions, Jenkins, XCode, Lerna.} \\
+      \textbf{Infrastructure}{: AWS, Elastic Beanstalk, RDS, ElastiCache, EC2, Terraform.} \\
+      \textbf{Libraries and Others}{: Typeorm, Node.js, Redis, Docker.} \\
+      }}
+  \end{itemize}
+ \end{minipage}\hspace{.05\textwidth}%
+ %-----------Languages-----------
+ \begin{minipage}[t]{.25\textwidth}
+  \section{Languages}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+      \small{\item{
+      \textbf{English}{: C2} \\
+      \textbf{Spanish}{: Native} \\
+      }}
+  \end{itemize}
+ \end{minipage}
 
 %-------------------------------------------
 \end{document}
