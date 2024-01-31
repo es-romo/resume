@@ -1,0 +1,1 @@
+convert -density 600 EstebanRomo_Resume.pdf -resample 300 -alpha remove EstebanRomo_Resume.jpg
