@@ -66,7 +66,6 @@
   \item\small{#1}
 }
 
-
 \newcommand{\resumeItemHeading}[2]{
   \vspace{4pt}\item\small{
     {\textbf{#1}: #2 \vspace{-2pt}}
@@ -123,6 +122,30 @@
     \small +1-437-344-0898
 \end{center}
 
+%-----------SKILLS-----------
+\begin{minipage}[t]{.78\textwidth}
+  \section{Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+      \small{\item{
+      \textbf{Languages}{: Typescript, SQL, Postgres, JavaScript, HTML, CSS, C++.} \\
+      \textbf{Frameworks}{: React, React Native, Express, Fastify, Jest.} \\
+      \textbf{Tools}{: Git, CircleCI, GitHub Actions, Jenkins, XCode, Lerna.} \\
+      \textbf{Infrastructure}{: AWS, Elastic Beanstalk, RDS, ElastiCache, EC2, Terraform.} \\
+      \textbf{Libraries \& Others}{: Node.js, Typeorm, Ant Design, Tailwind, Redis, Docker.} \\
+      }}
+  \end{itemize}
+\end{minipage}\hspace{.02\textwidth}%
+ %-----------Languages-----------
+\begin{minipage}[t]{.20\textwidth}
+  \section{Languages}
+  \begin{itemize}[leftmargin=0.0in, label={}]
+      \small{\item{
+      \textbf{English}{: Proficient} \\
+      \textbf{Spanish}{: Native} \\
+      }}
+  \end{itemize}
+\end{minipage}\vspace{-10pt}
+
 %-----------WORK EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
@@ -130,7 +153,8 @@
       {Full Stack Software Engineer}{Apr 2021 -- Nov 2023}
       {CANImmunize}{Remote}
       \resumeItemListStart
-        \resumeItemHeading{VaxRecordNS}{Allows the residents of Nova Scotia to access their vaccination records.}
+        \vspace{4pt}\resumeItem{Took on a pivotal role in the developement of multiple healthtech solutions across all stages of development.}
+        \vspace{-4pt}\resumeItemHeading{VaxRecordNS}{Allows the residents of Nova Scotia to access their vaccination records.}
         \resumeItemListStart
           \resumeItem{Collaborated closely with multiple vendors as part of a wide effort to centralize the province's health data.}
           \resumeItem{Developed web and mobile apps using React, React Native, and Typescript that interface with a governmental OIDC provider and a FHIR data repository that stores the vaccination records of 1M+ patients.}
@@ -216,30 +240,6 @@
 %   \resumeSimpleSubheading
 %   {HackUMBC 2020}{Nov 2020}
 % \resumeSubHeadingListEnd
-
-%-----------SKILLS-----------
-\begin{minipage}[t]{.7\textwidth}
-  \section{Skills}
-  \begin{itemize}[leftmargin=0.15in, label={}]
-      \small{\item{
-      \textbf{Languages}{: Typescript, SQL, Postgres, JavaScript, HTML, CSS.} \\
-      \textbf{Frameworks}{: React, React Native, Express, Fastify, Jest.} \\
-      \textbf{Tools}{: Git, CircleCI, GitHub Actions, Jenkins, XCode, Lerna.} \\
-      \textbf{Infrastructure}{: AWS, Elastic Beanstalk, RDS, ElastiCache, EC2, Terraform.} \\
-      \textbf{Libraries and Others}{: Typeorm, Node.js, Redis, Docker.} \\
-      }}
-  \end{itemize}
- \end{minipage}\hspace{.05\textwidth}%
- %-----------Languages-----------
- \begin{minipage}[t]{.25\textwidth}
-  \section{Languages}
-  \begin{itemize}[leftmargin=0.15in, label={}]
-      \small{\item{
-      \textbf{English}{: C2} \\
-      \textbf{Spanish}{: Native} \\
-      }}
-  \end{itemize}
- \end{minipage}
 
 %-------------------------------------------
 \end{document}
