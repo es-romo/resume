@@ -11,4 +11,5 @@ Based off of [jakegut/resume](https://github.com/jakegut/resume/).
  - [GhostScript](https://www.ghostscript.com/). Necessary at least in Windows. Seems to already be included with ImageMagic for Mac and Linux.
 
 # Installation
- - Link the pre commit hook by running `ln -f -s ../../hooks/pre-commit .git/hooks/pre-commit`.
+ - Create a symlink for the pre-commit hook `ln -f -s ../../hooks/pre-commit .git/hooks/pre-commit`.
+ - Make the pre-commit hook executable `chmod +x hooks/pre-commit`.
